@@ -2,16 +2,32 @@
 <html>
     <head>
         <meta charset="utf-8"> 
-        <title>
-            This is a test
-        </title>
+        <meta name="author" content="me">
+        <meta name="description" content="i&apos;m trying to figure out how the web works">
+        <title> This is a test </title>
     </head>
     <body>
+        <script>
+            function takeTime(time) {
+                var hourminute = {
+                    hour: time.getHours(),
+                    minute: time.getMinutes()
+                };
+                
+                console.log(hourminute.hour);
+            }
+        </script>
         <h1>
-            heading test
+            When are your next classes?
         </h1>
         <a href="https://www.duckduckgo.com" title="go to duckduckgo">
             hyperlink test
         </a>
+        <button type="button" onclick="takeTime(new Date())">
+            Click Me
+        </button>
+        <p id="showsomething">
+
+        </p>
     </body>
 </html>
